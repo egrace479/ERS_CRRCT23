@@ -6,7 +6,7 @@ Our goal is to replicate the model and quantum circuit presented in [1]. The aut
 
 ### Modelling
 
-Since the authors of [1] highlighted the ResNet-18 model as optimal, we focused our attention on this model. The data is available at https://www.kaggle.com/c/histopathologic-cancer-detection/data. From the training set provided, we selected 75% on which to train the ResNet-18 model, setting aside 25% for testing. This resulted in our model being trained on approximately 20,000 images. This classical model predicted cancer with 94.5% accuracy at epoch 15. For comparison, the authors of [1] acheived 89.9% accuracy training on 10,000 images.
+Since the authors of [1] highlighted the ResNet-18 model as optimal, we focused our attention on this model. The data is available at https://www.kaggle.com/c/histopathologic-cancer-detection/data. From the training set provided, we selected 75% on which to train the ResNet-18 model, setting aside 25% for testing. This resulted in our model being trained on approximately 165,000 images. This classical model predicted cancer with 94.5% accuracy at epoch 15 on the 55,000 image validation set. For comparison, the authors of [1] acheived 89.9% accuracy training on 10,000 images.
 
 ### Quantum Aspect
 
@@ -18,7 +18,7 @@ Ultimately, we ran the qunatum circuit on the default Pennylane simulator, AWS s
 
 ### Results
 
-The hybrid ResNet-18 model from the paper (trained on 10,000 images, using their Fig. 6 quantum circuit) predicted cancer with 84.3% accuracy. Our hybrid ResNet-18 model (trained on 20,000 images, using the simpler entanglement layer above) acheived 94.9% accuracy at epoch 15.
+The hybrid ResNet-18 model from the paper (trained on 10,000 images, using their Fig. 6 quantum circuit) predicted cancer with 84.3% accuracy. Our hybrid ResNet-18 model (trained on 165,000 images, using the simpler entanglement layer above) acheived 94.9% accuracy at epoch 15 on the 55,000 image validation set.
 
 ### Contents of Repo
 
