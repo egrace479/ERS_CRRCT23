@@ -8,6 +8,8 @@ Our goal is to replicate the model and quantum circuit presented in [1]. The aut
 
 Since the authors of [1] highlighted the ResNet-18 model as optimal, we focused our attention on this model. The data is available at https://www.kaggle.com/c/histopathologic-cancer-detection/data. From the training set provided, we selected 75% on which to train the ResNet-18 model, setting aside 25% for testing. This resulted in our model being trained on approximately 165,000 images. This classical model predicted cancer with 94.5% accuracy at epoch 15 on the 55,000 image validation set. For comparison, the authors of [1] acheived 89.9% accuracy training on 10,000 images.
 
+We also ran a VGG-16 implementation, which can be found [here](https://github.com/egrace479/ERS_CRRCT23/tree/main/vgg16).
+
 ### Quantum Aspect
 
 For an initial implementation, we decided to try a basic entanglement layer for the quantum circuit (see circuit representation below). This produced comparable results to those noted in the paper, so we continued the experimental runs with this simpler circuit to reduce noise and decoherence.
@@ -20,6 +22,8 @@ Ultimately, we ran the qunatum circuit on the default Pennylane simulator, AWS s
 
 The hybrid ResNet-18 model from the paper (trained on 10,000 images, using their Fig. 6 quantum circuit) predicted cancer with 84.3% accuracy. Our hybrid ResNet-18 model (trained on 165,000 images, using the simpler entanglement layer above) acheived 94.9% accuracy at epoch 15 on the 55,000 image validation set.
 
+It would be interesting to see if we could reduce the size of the training set, optimizing the number of images required to acheive comparable results, as this is a large training set.
+
 ### Implementation Instructions: 
 To run the model for classification
 Goto ./covalent deployment
@@ -28,9 +32,11 @@ Run "QML deployment.ipynb"
 
 ### Contents of Repo
 
-* [TBD]() - Notebook with optimal run of our classical ResNet-18 model.
-* [QML deployment]() - Notebook with optimal run of our hybrid ResNet-18 model with the basic entanglement layer.  
-* [TBD]() - Slides describing the process and results.
+* [Classical ResNet](https://github.com/egrace479/ERS_CRRCT23/tree/main/resnet18) - Notebook with optimal run of our classical ResNet-18 model.
+* [Classical VGG](https://github.com/egrace479/ERS_CRRCT23/tree/main/vgg16) - Notebook with a classical VGG-16 model.
+* [QML model](https://github.com/egrace479/ERS_CRRCT23/tree/main/qml_hybrid/basic%20entangler) - QML model.  
+* [QML deployment](https://github.com/egrace479/ERS_CRRCT23/tree/main/covalent%20deployment) - Inference model.
+* [Histopathological Cancer Early Detection](https://github.com/egrace479/ERS_CRRCT23/blob/main/Histopathological%20Cancer%20Early%20Detection.pdf) - Slides describing the process and results.
 * [Cancer_detection_QML_final_circuit](https://github.com/egrace479/ERS_CRRCT23/blob/main/Cancer_detection_QML%20_final_circuit.ipynb) - Notebook to run the ResNet-18 model with the last circuit of Fig. 7 given in the paper. Versioning issue prevented proper running of this implementation.
 * [QML_for_Cancer_Detection](https://github.com/egrace479/ERS_CRRCT23/blob/main/QML_for_Cancer_Detection.pdf) - Majumdar, et. al. paper we based our work on.
 
