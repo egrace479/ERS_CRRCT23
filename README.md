@@ -22,11 +22,13 @@ The hybrid ResNet-18 model from the paper (trained on 10,000 images, using their
 
 ### Contents of Repo
 
-[TBD] - Notebook with optimal run of our hybrid ResNet-18 model with the basic entanglement layer.  
-[TBD] - Slides describing the process and results.
-Cancer_detection_QML _final_circuit.ipynb - Notebook to run the ResNet-18 model with the last circuit of Fig. 7 given in the paper. Versioning issue prevented proper running of this implementation.
-QML_for_Cancer_Detection.pdf - Majumdar, et. al. paper we based our work on.
+* [TBD]() - Notebook with optimal run of our classical ResNet-18 model.
+* [TBD]() - Notebook with optimal run of our hybrid ResNet-18 model with the basic entanglement layer.  
+* [TBD]() - Slides describing the process and results.
+* [TBD]() - App to upload image and classify.
+* [Cancer_detection_QML_final_circuit](https://github.com/egrace479/ERS_CRRCT23/blob/main/Cancer_detection_QML%20_final_circuit.ipynb) - Notebook to run the ResNet-18 model with the last circuit of Fig. 7 given in the paper. Versioning issue prevented proper running of this implementation.
+* [QML_for_Cancer_Detection](https://github.com/egrace479/ERS_CRRCT23/blob/main/QML_for_Cancer_Detection.pdf) - Majumdar, et. al. paper we based our work on.
 
 ### References
 
-[1] Reek Majumdar, Biswaraj Baral, Bhavika Bhalgamiya, Taposh Dutta Roy. _Histopathological Cancer Detection Using Hybrid Quantum Computing_, Feb. 2023. https://doi.org/10.48550/arXiv.2302.04633
+[1]: Reek Majumdar, Biswaraj Baral, Bhavika Bhalgamiya, Taposh Dutta Roy. _Histopathological Cancer Detection Using Hybrid Quantum Computing_, Feb. 2023. https://doi.org/10.48550/arXiv.2302.04633
